@@ -64,7 +64,7 @@ contract Upload{
    }
    // function to dissplay all the image 
    function display(address _user) external view returns (string[] memory ){
-         require(_user==msg.sender|| ownership[_user][msg.sender],"You dont have access to these contents");
+       //  require(_user==msg.sender|| ownership[_user][msg.sender],"You dont have access to these contents");
          return value[_user];
    }
    // function get all the accesslist 
